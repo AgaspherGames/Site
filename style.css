@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #170028;
+}
+
+p{
+    font-size: 45px;
+}
+
+
+.header{
+    z-index: 1;
+    box-sizing: border-box;
+    width: 100vw;
+    position: fixed;
+    height: 10vh;
+    background-color: #00AEBA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 24px;
+}
+
+nav{
+    width: 80%;
+}
+
+main{
+    padding-top: 10vh;
+    font-size: 50px;
+}
+
+.right{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.search{
+    width: 20vw;
+    background-color: #54DBC6 ;
+    border-radius: 40px;
+    display: flex;
+    padding: 10px;
+}
+
+.search img{
+    height: 4vh;
+}
+
+.search input{
+    background-color: #00AEBA;
+    border-radius: 100px;
+    border: 0px;
+    margin: auto;
+    height: 4vh;
+    width: 80%;
+}
+
+.search input:focus{
+    outline: none;
+}
+
+.fullscreen{
+    position: relative;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size:contain ;
+    background-attachment: fixed;
+    overflow: hidden;
+    background-size: 30%;
+}
+
+.leftup{
+    position: relative;
+    top: 10%;
+    left: 10%;
+}
+
+.leftdown{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    width: 80%;
+}
+
+.rightdown{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+.adown{
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    background-color: #00AEBA;
+    border-radius: 50%;
+    padding: 10px;
+    position: absolute;
+    right: 5%;
+    bottom: 15%;
+}
+
+.aup{
+    transform: scale(1,-1);
+}
+
+#logo{
+    height: 8vh;
+    border-radius: 50%;
+}
+
+#f1{
+    background-image: url('./imgs/coding.svg');
+    background-position: center;
+    background-color: #132C56;
+    color: #0081A4;
+}
+
+#f2{
+    background-image: url('./imgs/bg2.svg');
+    background-color: #170028;
+    background-position: center;
+    color: #005582;
+}
+
+#f3{
+    background-image: url('./imgs/bg_3.svg');
+    background-color: #132C56;
+    background-position: center;
+    color: #0081A4;
+}
+
+#f4{
+    background-image: url('./imgs/bg_4.svg');
+    background-color: #170028;
+    background-position: center;
+    color: #005582;
+}
+
