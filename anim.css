@@ -1,0 +1,105 @@
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: #170028;
+    position: relative;
+}
+
+.rot{
+    animation: 1s linear infinite rotate;
+}
+
+.moveupdown{
+    animation: 1s ease infinite moveupdown;
+}
+
+.scaling{
+    animation: 1s infinite ease-out scaling;
+}
+
+.all{
+    animation: 1s infinite ease-out all;
+}
+
+.light{
+    background-color: #132C56;
+}
+
+.code{
+    padding: 1vw;
+    background-color: rgba(19, 44, 86, 0.2);
+    border-radius: 40px;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-35%);
+    transition: all 0.4s ease;
+}
+
+.code:hover{
+    font-size: 60px;
+}
+
+.purple{
+    background-color: rgba(23, 0, 40, 0.2);
+}
+
+.small{
+    font-size: 20px;
+}
+
+.small:hover{
+    font-size: 30px;
+}
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes moveupdown{
+    0%{ transform:translateY(0); }
+    50%{ transform:translateY(-200px); }
+    100%{ transform:translateY(0); }
+}
+
+@keyframes scaling{
+    0%{ transform:scale(1,1); }
+    25%{ transform:scale(1,0.5); }
+    75%{ transform:scale(2,1); }
+    100%{ transform:scale(1,1); }
+}
+
+@keyframes all{
+    0%{ 
+        transform:scale(1,1);
+        transform:translateY(0);
+        transform:translateY(0) rotate(0deg);
+    }
+    25%{ 
+        transform:scale(1,0.5);
+        transform:translateY(-50px);
+        transform:translateY(-100px) rotate(50deg);
+        background-color: #170028;
+    }
+    75%{ 
+        transform:scale(2,1);
+        transform:translateY(-100px) rotate(-50deg);
+        background-color: #170028;
+    }
+    100%{ 
+        transform:scale(1,1); 
+        transform:translateY(0) rotate(0deg);
+    }
+}
+
+.center{
+    display: flex;
+    justify-content: space-around;
+}
