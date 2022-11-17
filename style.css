@@ -63,6 +63,11 @@ main{
     margin: auto;
     height: 4vh;
     width: 80%;
+
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 32px;
+    color: #170028;
 }
 
 .search input:focus{
