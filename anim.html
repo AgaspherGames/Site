@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="anim.css">
+    <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="left">
+                <img src="imgs/logo.png" id="logo" alt="">
+            </div>
+            <nav>
+                <div class="right">
+                    <div class="search">
+                        <img src="imgs/search.png" alt="">
+                        <input type="text" onblur="alert('По запросу \''+this.value+'\' ничего не найдено'); this.value = ''">
+                    </div>
+                    <a href="index.html"><b>Главная</b></a>
+                    <a href="forms.html"><b>Формы</b></a>
+                    <a href="anim.html"><b>Анимации</b></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="fullscreen" id="f1">
+            <div class="leftup">
+                <h1>Анимации</h1>
+                <h3>Вращение</h3>
+            </div>
+            <div class="code purple">
+                @keyframes rotate {<br>
+                    from {<br>
+                      transform: rotate(0deg);<br>
+                    }<br>
+                  
+                    to {<br>
+                      transform: rotate(359deg);<br>
+                    }
+                  }<br>
+            </div>
+            <div class="leftdown center">
+                <div class="square rot"></div>
+                <div class="square rot"></div>
+                <div class="square rot"></div>
+                <div class="square rot"></div>
+                <div class="square rot"></div>
+            </div>
+            <a onclick="window.scrollTo({top: window.innerHeight*0.9,behavior: 'smooth'});" id="a1"><img class="adown" src="imgs/down-arrow.png" alt=""></a>
+        </div>
+        <div class="fullscreen" id="f2">
+            <div class="leftup">
+                <h1>Анимации</h1>
+                <h3>Движение</h3>
+            </div>
+            <div class="code">
+                @keyframes moveupdown{<br>
+                    0%{ transform:translateY(0); }<br>
+                    50%{ transform:translateY(-200px); }<br>
+                    100%{ transform:translateY(0); }
+                }
+            </div>
+            <div class="leftdown center">
+                <div class="square light moveupdown"></div>
+                <div class="square light moveupdown"></div>
+                <div class="square light moveupdown"></div>
+            </div>
+            <a onclick="window.scrollTo({top: 2*window.innerHeight*0.9,behavior: 'smooth'});" id="a1"><img class="adown" src="imgs/down-arrow.png" alt=""></a>
+        </div>
+        <div class="fullscreen" id="f3">
+            <div class="leftup">
+                <h1>Анимации</h1>
+                <h3>Изменение размера</h3>
+            </div>
+            <div class="code purple">
+                @keyframes scaling{<br>
+                    0%{ transform:scale(1,1); } <br>
+                    25%{ transform:scale(1,0.5); }<br>
+                    75%{ transform:scale(2,1); }<br>
+                    100%{ transform:scale(1,1); }
+                }
+            </div>
+            <div class="leftdown center">
+                <div class="square scaling"></div>
+                <div class="square scaling"></div>
+                <div class="square scaling"></div>
+            </div>
+            <a onclick="window.scrollTo({top: 3*window.innerHeight*0.9,behavior: 'smooth'});" id="a1"><img class="adown" src="imgs/down-arrow.png" alt=""></a>
+        </div>
+        <div class="fullscreen" id="f4">
+            <div class="leftup">
+                <h1>Анимации</h1>
+                <h3>Все вместе и новые</h3>
+            </div>
+            <div class="code small">
+                @keyframes all{<br>
+                    0%{ <br>
+                        transform:scale(1,1);<br>
+                        transform:translateY(0);<br>
+                        transform:translateY(0) rotate(0deg);<br>
+                    }<br>
+                    25%{ <br>
+                        transform:scale(1,0.5);<br>
+                        transform:translateY(-50px);<br>
+                        transform:translateY(-100px) rotate(50deg);<br>
+                        background-color: #170028;<br>
+                    }<br>
+                    75%{ <br>
+                        transform:scale(2,1);<br>
+                        transform:translateY(-100px) rotate(-50deg);<br>
+                        background-color: #170028;<br>
+                    }<br>
+                    100%{ <br>
+                        transform:scale(1,1); <br>
+                        transform:translateY(0) rotate(0deg);<br>
+                    }
+                }
+            </div>
+            <div class="leftdown center">
+                <div class="square light all"></div>
+                <div class="square light all"></div>
+                <div class="square light all"></div>
+            </div>
+            
+            <a onclick="window.scrollTo({top: 0*window.innerHeight*0.9,behavior: 'smooth'});" id="a1"><img class="adown aup" src="imgs/down-arrow.png" alt=""></a>
+        </div>
+    </main>
+</body>
+</html>

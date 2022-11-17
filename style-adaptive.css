@@ -1,8 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    /*font-family: 'Roboto', sans-serif;*/
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 a{
@@ -11,7 +10,7 @@ a{
 }
 
 p{
-    font-size: 45px;
+    font-size: 5vmin;
 }
 
 
@@ -26,7 +25,7 @@ p{
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    font-size: 24px;
+    font-size: 2.7vw;
 }
 
 nav{
@@ -35,7 +34,7 @@ nav{
 
 main{
     padding-top: 10vh;
-    font-size: 50px;
+    font-size: 4vw;
 }
 
 .right{
@@ -67,7 +66,7 @@ main{
 
     box-sizing: border-box;
     padding: 20px;
-    font-size: 32px;
+    font-size: calc(16px + 16 * (100vw / 1280));
     color: #170028;
 }
 
@@ -106,8 +105,7 @@ main{
 
 .adown{
     box-sizing: border-box;
-    width: 100px;
-    height: 100px;
+    width: 10%;
     background-color: #00AEBA;
     border-radius: 50%;
     padding: 10px;

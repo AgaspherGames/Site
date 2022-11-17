@@ -1,0 +1,82 @@
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+}
+
+label{
+    font-size: 60px;
+    color: #00AEBA;
+}
+
+.dark_lbl{
+    color: #0081A4;
+}
+
+input[type=radio]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 10px;
+    outline: 0px;
+    border: 2px solid #0081A4;
+    border-radius: 50%;
+
+    transition: all 0.2s ease-out;
+}
+
+input[type=radio]:checked{
+    border: 6px solid #170028;
+}
+
+textarea{
+    border-radius: 100px;
+    border: 0px;
+    margin: auto;
+
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 32px;
+    color: #170028;
+
+
+    background-color: #005582;
+    outline: 0px;
+    width: 90%;
+}
+
+input[type=number]{
+    background-color: #00AEBA;
+    border-radius: 100px;
+    border: 0px;
+    margin: auto;
+    height: 4vh;
+    width: 9vw;
+
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 32px;
+    color: #170028;
+}
+
+input[type=submit]{
+    background-color: #00AEBA;
+    border-radius: 100px;
+    border: 0px;
+    margin: 4vh auto;
+    height: 6vh;
+    width: 30%;
+
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 32px;
+    color: #170028;
+}
