@@ -76,7 +76,7 @@ input[type=submit]{
     width: 30%;
 
     box-sizing: border-box;
-    padding: 20px;
+    padding: auto;
     font-size: 32px;
     color: #170028;
 }

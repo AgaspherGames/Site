@@ -109,24 +109,18 @@
             <div class="code small">
                 @keyframes all{<br>
                     0%{ <br>
-                        transform:scale(1,1);<br>
-                        transform:translateY(0);<br>
-                        transform:translateY(0) rotate(0deg);<br>
+                        transform:translateY(0) rotate(0deg) scale(1,1);<br>
                     }<br>
                     25%{ <br>
-                        transform:scale(1,0.5);<br>
-                        transform:translateY(-50px);<br>
-                        transform:translateY(-100px) rotate(50deg);<br>
-                        background-color: #170028;<br>
+                        transform: scale(1,0.5) translateY(-100px) rotate(50deg);<br>
+                        background-color: #340058;<br>
                     }<br>
                     75%{ <br>
-                        transform:scale(2,1);<br>
-                        transform:translateY(-100px) rotate(-50deg);<br>
-                        background-color: #170028;<br>
+                        transform: scale(2,1) translateY(-100px) rotate(-50deg);<br>
+                        background-color: #340058;<br>
                     }<br>
                     100%{ <br>
-                        transform:scale(1,1); <br>
-                        transform:translateY(0) rotate(0deg);<br>
+                        transform:scale(1,1) translateY(0) rotate(0deg);<br>
                     }
                 }
             </div>

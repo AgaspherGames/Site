@@ -78,24 +78,18 @@
 
 @keyframes all{
     0%{ 
-        transform:scale(1,1);
-        transform:translateY(0);
-        transform:translateY(0) rotate(0deg);
+        transform:translateY(0) rotate(0deg) scale(1,1);
     }
     25%{ 
-        transform:scale(1,0.5);
-        transform:translateY(-50px);
-        transform:translateY(-100px) rotate(50deg);
-        background-color: #170028;
+        transform: scale(1,0.5) translateY(-100px) rotate(50deg);
+        background-color: #340058;
     }
     75%{ 
-        transform:scale(2,1);
-        transform:translateY(-100px) rotate(-50deg);
-        background-color: #170028;
+        transform: scale(2,1) translateY(-100px) rotate(-50deg);
+        background-color: #340058;
     }
     100%{ 
-        transform:scale(1,1); 
-        transform:translateY(0) rotate(0deg);
+        transform:scale(1,1) translateY(0) rotate(0deg);
     }
 }
 
