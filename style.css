@@ -8,12 +8,16 @@
 a{
     text-decoration: none;
     color: #170028;
+    transition: all 0.1s ease;
+}
+
+a:hover{
+    transform: scale(1.05);
 }
 
 p{
     font-size: 45px;
 }
-
 
 .header{
     z-index: 1;
@@ -130,9 +134,27 @@ main{
     transform: scale(1.2,-1.2);
 }
 
+.animated{
+    transform: translatey(40%);
+    overflow: hidden;
+    transition: all 0.8s ease-in-out;
+    opacity: 0;
+}
+
+.show{
+    transform: translatey(0%);
+    opacity: 1;
+}
+
 #logo{
     height: 8vh;
     border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+#logo:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00AEBA;
 }
 
 #f1{
@@ -163,3 +185,17 @@ main{
     color: #005582;
 }
 
+#f3::before{
+    position: absolute;
+    height: 50px;
+    width: 100vw;
+    content: url('./imgs/wave2.svg');
+
+}
+
+#f2::before, #f4::before{
+    position: absolute;
+    height: 50px;
+    width: 120vw;
+    content: url('./imgs/wave.svg');
+}

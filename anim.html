@@ -64,10 +64,10 @@
         </div>
         <div class="fullscreen" id="f2">
             <div class="leftup">
-                <h1>Анимации</h1>
-                <h3>Движение</h3>
+                <h1 class="animated">Анимации</h1>
+                <h3 class="animated">Движение</h3>
             </div>
-            <div class="code">
+            <div class="code animated">
                 @keyframes moveupdown{<br>
                     0%{ transform:translateY(0); }<br>
                     50%{ transform:translateY(-200px); }<br>
@@ -83,10 +83,10 @@
         </div>
         <div class="fullscreen" id="f3">
             <div class="leftup">
-                <h1>Анимации</h1>
-                <h3>Изменение размера</h3>
+                <h1 class="animated">Анимации</h1>
+                <h3 class="animated">Изменение размера</h3>
             </div>
-            <div class="code purple">
+            <div class="code purple animated">
                 @keyframes scaling{<br>
                     0%{ transform:scale(1,1); } <br>
                     25%{ transform:scale(1,0.5); }<br>
@@ -103,10 +103,10 @@
         </div>
         <div class="fullscreen" id="f4">
             <div class="leftup">
-                <h1>Анимации</h1>
-                <h3>Все вместе и новые</h3>
+                <h1 class="animated">Анимации</h1>
+                <h3 class="animated">Все вместе и новые</h3>
             </div>
-            <div class="code small">
+            <div class="code small animated">
                 @keyframes all{<br>
                     0%{ <br>
                         transform:translateY(0) rotate(0deg) scale(1,1);<br>
@@ -133,5 +133,6 @@
             <a onclick="window.scrollTo({top: 0*window.innerHeight*0.9,behavior: 'smooth'});" id="a1"><img class="adown aup" src="imgs/down-arrow.png" alt=""></a>
         </div>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
