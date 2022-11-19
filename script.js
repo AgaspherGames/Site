@@ -10,3 +10,4 @@ function check() {
         else elem.classList.remove('show');
     }
 }
+

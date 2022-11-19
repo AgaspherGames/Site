@@ -158,22 +158,24 @@ main{
 }
 
 #f1{
-    background-image: url('./imgs/coding.svg');
-    background-position: center;
-    background-color: #132C56;
+    background: fixed url('./imgs/coding.svg') no-repeat center/20%, linear-gradient(0deg, #132C56, #224b92);
     color: #0081A4;
+    transition: all 1s linear;
+    animation: 10s linear infinite blue_gr;
 }
 
 #f2{
     background-image: url('./imgs/bg2.svg');
     background-color: #170028;
+    background: fixed url('./imgs/bg2.svg') no-repeat center/20%, linear-gradient(0deg, #170028, #320253);
     background-position: center;
-    color: #005582;
+    color: #0081A4;
 }
 
 #f3{
     background-image: url('./imgs/bg_3.svg');
     background-color: #132C56;
+    background: fixed url('./imgs/bg_3.svg') no-repeat center/20%, linear-gradient(0deg, #132C56, #224b92);
     background-position: center;
     color: #0081A4;
 }
@@ -181,8 +183,9 @@ main{
 #f4{
     background-image: url('./imgs/bg_4.svg');
     background-color: #170028;
+    background: fixed url('./imgs/bg_4.svg') no-repeat center/20%, linear-gradient(0deg, #170028, #320253);
     background-position: center;
-    color: #005582;
+    color: #0081A4;
 }
 
 #f3::before{
